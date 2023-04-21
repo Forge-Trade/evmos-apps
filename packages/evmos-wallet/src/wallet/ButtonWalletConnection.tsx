@@ -96,15 +96,20 @@ export const ButtonWalletConnection = ({
   return walletExtension.active === true ? (
     <>
       <button
-        style={{height: "36px"}}
+        style={{ height: "36px" }}
         onClick={open}
         className="rounded-full p-3 items-center flex gap-3 bg-darkGray2"
       >
-        {walletExtension.extensionName === METAMASK_KEY && <MetamaskIcon width={24} height={24} />}
-        {walletExtension.extensionName === KEPLR_KEY && <KeplrIcon width={24} height={24} />}
+        {walletExtension.extensionName === METAMASK_KEY && (
+          <MetamaskIcon width={24} height={24} />
+        )}
+        {walletExtension.extensionName === KEPLR_KEY && (
+          <KeplrIcon width={24} height={24} />
+        )}
         {walletExtension.extensionName === WALLECT_CONNECT_KEY && (
           <WalletConnectIcon width={24} height={24} />
-        )}        <span style={{ fontFamily: `"Inter custom", sans-serif` }}>
+        )}{" "}
+        <span style={{ fontFamily: `"Inter custom", sans-serif` }}>
           {walletExtension?.evmosAddressEthFormat.slice(0, 6)}...
           {walletExtension?.evmosAddressEthFormat.slice(
             walletExtension?.evmosAddressEthFormat.length - 4,

@@ -101,7 +101,7 @@ export default function Home() {
                 <>
                   <SnackbarsInternal />
                   <StatefulHeader pageName="Assets" />
-                  <div className="container mt-10 mx-auto mb-auto overflow-auto">
+                  <div className="container mx-auto mt-10 mb-auto overflow-auto">
                     <AssetsTable />
                   </div>
                 </>
