@@ -7,11 +7,10 @@ import { useSelector } from "react-redux";
 import { StoreType } from "evmos-wallet";
 import { ERC20BalanceResponse } from "./types";
 import { getAssetsForAddress } from "../../../internal/asset/functionality/fetch";
-import { NAV_TO_MISSION_CONTROL, EVMOS_PAGE_URL } from "constants-helper";
 import dynamic from "next/dynamic";
 
 const ModalAsset = dynamic(() => import("../modals/ModalAsset"));
-import { MessageTable, Switch, Navigation } from "ui-helpers";
+import { MessageTable, Switch } from "ui-helpers";
 const TopBar = dynamic(() => import("./topBar/TopBar"));
 const ContentTable = dynamic(() => import("./ContentTable"));
 
@@ -98,7 +97,6 @@ const AssetsTable = () => {
 
   return (
     <>
-      <Navigation href={EVMOS_PAGE_URL} text={NAV_TO_MISSION_CONTROL} />
       <TopBar topProps={topProps} />
       <div className="mx-5 flex flex-col justify-center lg:flex-row lg:justify-between xl:mx-0">
         <Guide />
@@ -110,7 +108,7 @@ const AssetsTable = () => {
           checked={hideZeroBalance}
         />
       </div>
-      <div className="xl:scrollbar-hide mt-5 max-h-[33vh] w-full overflow-y-auto font-[IBM] text-pearl sm:max-h-[36vh] lg:max-h-[46vh]">
+      <div className="xl:scrollbar-hide mt-5  w-full font-[IBM] text-pearl">
         <table className="w-full">
           {tableData?.length === 0 && <HeadTable />}
           <tbody>

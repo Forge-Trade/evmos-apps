@@ -16,7 +16,7 @@ import {
   StoreType,
   getAllSnackbars,
 } from "evmos-wallet";
-import { Footer, Container, TermOfServices } from "ui-helpers";
+import { Container, TermOfServices } from "ui-helpers";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import Script from "next/script";
 
@@ -101,10 +101,9 @@ export default function Home() {
                 <>
                   <SnackbarsInternal />
                   <StatefulHeader pageName="Assets" />
-                  <div className="container mx-auto mb-auto overflow-auto">
+                  <div className="container mt-10 mx-auto mb-auto overflow-auto">
                     <AssetsTable />
                   </div>
-                  <Footer />
                 </>
               </Container>
             </main>

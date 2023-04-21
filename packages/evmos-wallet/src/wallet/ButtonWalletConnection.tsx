@@ -37,6 +37,7 @@ import {
   useWalletConnect,
 } from "../internal/wallet/functionality/walletconnect/walletconnect";
 import { Tooltip } from "ui-helpers";
+import { DropdownArrow } from "icons";
 
 // Components
 import { Button } from "ui-helpers";
@@ -95,20 +96,25 @@ export const ButtonWalletConnection = ({
   return walletExtension.active === true ? (
     <>
       <button
-        className="flex items-center space-x-3 justify-center"
+        style={{height: "36px"}}
         onClick={open}
+        className="rounded-full p-3 items-center flex gap-3 bg-darkGray2"
       >
-        {walletExtension.extensionName === METAMASK_KEY && <MetamaskIcon />}
-        {walletExtension.extensionName === KEPLR_KEY && <KeplrIcon />}
+        {walletExtension.extensionName === METAMASK_KEY && <MetamaskIcon width={24} height={24} />}
+        {walletExtension.extensionName === KEPLR_KEY && <KeplrIcon width={24} height={24} />}
         {walletExtension.extensionName === WALLECT_CONNECT_KEY && (
-          <WalletConnectIcon />
-        )}
-
-        <span className="text-lg font-bold">
-          {formatProviderAddress(walletExtension, true)}
+          <WalletConnectIcon width={24} height={24} />
+        )}        <span style={{ fontFamily: `"Inter custom", sans-serif` }}>
+          {walletExtension?.evmosAddressEthFormat.slice(0, 6)}...
+          {walletExtension?.evmosAddressEthFormat.slice(
+            walletExtension?.evmosAddressEthFormat.length - 4,
+            walletExtension?.evmosAddressEthFormat.length
+          )}
         </span>
+        <div className="text-darkGray5">
+          <DropdownArrow color="#918378" />
+        </div>
       </button>
-
       <Modal show={show} onClose={close}>
         <>
           <ModalTitle title="Wallet" />
