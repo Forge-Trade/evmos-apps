@@ -188,12 +188,49 @@ export const ButtonWalletConnection = ({
     </>
   ) : (
     <div className="flex justify-center">
-      <Button onClick={open}>
+      <button
+        className="flex items-center rounded-full"
+        style={{
+          backgroundColor: "rgba(237, 78, 51, 0.24)",
+          height: "40px",
+        }}
+        onClick={open}
+      >
         <div className="flex items-center space-x-2 ">
-          <WalletIcon />
-          <span>Connect wallet</span>
+          <span
+            style={{
+              color: "#ED4E33",
+              paddingLeft: "12px",
+              paddingRight: "8px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              fontWeight: "600",
+            }}
+          >
+            Connect
+          </span>
+          <div
+            style={{
+              height: "20px",
+              margin: "0px",
+              width: "1px",
+              backgroundColor: "rgb(237, 78, 51)",
+            }}
+          />
+          <div
+            style={{
+              paddingLeft: "4px",
+              paddingRight: "16px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              marginLeft: "0px!important",
+              marginRight: "0px!important",
+            }}
+          >
+            <DropdownArrow color="#ED4E33" />
+          </div>
         </div>
-      </Button>
+      </button>
 
       <Modal show={show} onClose={close}>
         <>

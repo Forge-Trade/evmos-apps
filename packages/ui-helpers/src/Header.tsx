@@ -22,7 +22,7 @@ export const Header = ({
   }, [setShowSidebar]);
 
   return (
-    <div className="mb-3 m-3 sticky top-0 justify-between items-center flex text-pearl">
+    <div className="mb-3 p-3 sticky top-0 justify-between items-center flex text-pearl">
       <div className="flex items-center ">
         <Link
           href={EVMOS_PAGE_URL}
@@ -38,36 +38,45 @@ export const Header = ({
           />
         </Link>
         <div className="flex gap-2">
-          <span
+          <a
+            href="https://forge-beta.netlify.app/swap"
+            rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
           >
             Swap
-          </span>
-          <span
+          </a>
+          <a
+            href="https://forge-beta.netlify.app/pools"
+            rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
           >
             Pools
-          </span>
+          </a>
 
-          <span
+          <a
+            href="https://forge-beta.netlify.app/pool"
+            rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
           >
             Add Liquidity
-          </span>
-          <span
+          </a>
+          <a
             className="py-2 text-white px-4"
+            href="https://app.stride.zone"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
           >
             Liquid Stake
-          </span>
+          </a>
           <span
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
           >
-            IBC Assets
+            Assets
           </span>
         </div>
       </div>
