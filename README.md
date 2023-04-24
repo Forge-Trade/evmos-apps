@@ -2,7 +2,6 @@
   <h1> Evmos Apps Frontend </h1>
 </div>
 
-
 <div align="center">
   <a href="https://github.com/evmos/apps/blob/main/LICENSE">
     <img alt="License: ENCL-1.0" src="https://img.shields.io/badge/license-ENCL--1.0-orange" />
