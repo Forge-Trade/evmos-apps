@@ -16,7 +16,7 @@ import {
   StoreType,
   getAllSnackbars,
 } from "evmos-wallet";
-import { Container, TermOfServices } from "ui-helpers";
+import { Container } from "ui-helpers";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import Script from "next/script";
 
@@ -96,7 +96,6 @@ export default function Home() {
         `}
             </Script>
             <main>
-              <TermOfServices />
               <Container>
                 <>
                   <SnackbarsInternal />
