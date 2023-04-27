@@ -17,11 +17,7 @@ export const Description = ({
       } `}
     >
       <Image
-        src={
-          imageSrc
-            ? imageSrc
-            : `/tokens/${symbol.toLocaleLowerCase()}.png`
-        }
+        src={imageSrc ? imageSrc : `/tokens/${symbol.toLocaleLowerCase()}.png`}
         alt={symbol}
         width={30}
         height={30}
