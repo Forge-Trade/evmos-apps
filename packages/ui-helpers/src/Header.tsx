@@ -31,7 +31,7 @@ export const Header = ({
           aria-label="home"
         >
           <Image
-            src={`/assets/images/ForgeIcon.png`}
+            src={`/images/ForgeIcon.png`}
             alt={"logo"}
             width={48}
             height={48}

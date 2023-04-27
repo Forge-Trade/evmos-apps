@@ -128,7 +128,7 @@ const Withdraw = ({
             style={{
               tokenTo: item.symbol,
               address: address,
-              img: `/assets/tokens/evmos.png`,
+              img: `/tokens/evmos.png`,
               text: "EVMOS",
             }}
           />
@@ -154,8 +154,8 @@ const Withdraw = ({
             token={item.symbol === EVMOS_SYMBOL ? "OSMO" : item.symbol}
             img={
               item.symbol === EVMOS_SYMBOL
-                ? "/assets/tokens/osmo.png"
-                : `/assets/tokens/${item.symbol.toLowerCase()}.png`
+                ? "/tokens/osmo.png"
+                : `/tokens/${item.symbol.toLowerCase()}.png`
             }
           />
           <div className="space-y-3">

@@ -157,7 +157,7 @@ const ContentTable = ({
           title={
             <RowContent
               symbol={v.name}
-              imgSrc={`/assets/tokenIdentifier/${v.icon.toLocaleLowerCase()}.png`}
+              imgSrc={`/tokenIdentifier/${v.icon.toLocaleLowerCase()}.png`}
               valueInTokens={formatNumber(valueInTokens)}
               valueInDollars={valueInDollars.toFixed(2)}
             />

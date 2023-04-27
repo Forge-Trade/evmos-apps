@@ -71,7 +71,7 @@ const DepositReceiver = ({
         <div className="flex items-center space-x-4">
           <TextSmall text="TO" />
           <Image
-            src="/assets/tokens/evmos.png"
+            src="/tokens/evmos.png"
             alt="evmos"
             width={25}
             height={25}

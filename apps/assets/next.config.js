@@ -9,7 +9,7 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
-  basePath: "/assets",
+  basePath: "/",
   swcMinify: true,
   i18n: {
     locales: ["en"],
