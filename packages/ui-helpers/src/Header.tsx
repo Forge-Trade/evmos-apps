@@ -39,7 +39,7 @@ export const Header = ({
         </Link>
         <div className="flex gap-2">
           <a
-            href="https://app.forge.trade/swap"
+            href="https://app.forge.trade/#/swap"
             rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
@@ -47,7 +47,7 @@ export const Header = ({
             Swap
           </a>
           <a
-            href="https://app.forge.trade/pools"
+            href="https://app.forge.trade/#/pools"
             rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
@@ -56,7 +56,7 @@ export const Header = ({
           </a>
 
           <a
-            href="https://app.forge.trade/pool"
+            href="https://app.forge.trade/#/pool"
             rel="noopener noreferrer"
             className="py-2 text-white px-4"
             style={{ fontFamily: `"Inter custom", sans-serif` }}
