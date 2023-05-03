@@ -34,7 +34,7 @@ export default function Home() {
         <WagmiConfig client={wagmiClient}>
           <>
             <Head>
-              <title>Assets Page</title>
+              <title>Forge</title>
               <link rel="icon" href="/favicon.ico" />
 
               <meta charSet="utf-8" />
@@ -46,21 +46,20 @@ export default function Home() {
                 name="keywords"
                 content="assets, evmos, evm, evm on cosmos, fast finality, delegated proof-of-stake, single-token representation, erc20 assets"
               />
-              <link rel="canonical" href="https://app.evmos.org/assets" />
+              <link rel="canonical" href="https://app.forge.trade/#/assets" />
 
               {/* <!--  Essential META Tags --> */}
-              <meta property="og:title" content="Evmos Assets" />
+              <meta property="og:title" content="Forge" />
               <meta property="og:type" content="article" />
               <meta
+                name="twitter:image"
                 property="og:image"
-                content="https://storage.evmos.org/social_previews/social_share_apps.jpg"
+                content="https://forge-dex.s3.amazonaws.com/forge.jpeg"
               />
               <meta
                 name="twitter:image"
                 property="og:image"
-                content={
-                  "https://storage.evmos.org/social_previews/social_share_apps.jpg"
-                }
+                content="https://forge-dex.s3.amazonaws.com/forge.jpeg"
               />
               <meta property="og:url" content="https://app.evmos.org/assets" />
               <meta name="twitter:card" content="summary_large_image" />
@@ -68,14 +67,14 @@ export default function Home() {
               {/* <!--  Non-Essential, But Recommended --> */}
               <meta
                 property="og:description"
-                content="EVMOS Assets is the official place to withdraw, deposit and convert your Evmos assets."
+                content="Swap, earn, and build on the strongest Evmos community owned DEX."
               />
               <meta property="og:site_name" content="Evmos Assets" />
               <meta
                 name="twitter:description"
-                content="EVMOS Assets is the official place to withdraw, deposit and convert your Evmos assets."
+                content="Swap, earn, and build on the strongest Evmos community owned DEX."
               />
-              <meta name="twitter:site" content="@EvmosOrg" />
+              <meta name="twitter:site" content="@ForgeDEX" />
 
               <link rel="icon" href="/favicon.ico" />
               {/* <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> */}
