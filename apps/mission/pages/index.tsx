@@ -20,6 +20,7 @@ import {
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Container, TermOfServices } from "ui-helpers";
 import MainContainer from "../src/components/mission/MainContainer";
+import { InformationBanner } from "ui-helpers";
 
 function SnackbarsInternal() {
   const valueRedux = useSelector((state: StoreType) => getAllSnackbars(state));
@@ -40,6 +41,23 @@ export default function Mission() {
 
             <main>
               <TermOfServices />
+              <InformationBanner
+                dismissible={true}
+                localStorageId="dora-hacks-banner"
+                text={
+                  <div className="text-base">
+                    Extend the EVM with DoraHacks - live until June 2!{" "}
+                    <a
+                      href="https://dorahacks.io/hackathon/EVM/detail"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2.5 rounded bg-red p-5 py-1.5 font-semibold text-pearl"
+                    >
+                      Build Now 🚀
+                    </a>
+                  </div>
+                }
+              />
               <Container>
                 <>
                   <SnackbarsInternal />

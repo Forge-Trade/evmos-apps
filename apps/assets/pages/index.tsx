@@ -21,6 +21,8 @@ import { Provider, useDispatch, useSelector } from "react-redux";
 import Script from "next/script";
 
 import { StatefulHeader } from "../src/StatefulHeader";
+import { InformationBanner } from "ui-helpers";
+
 function SnackbarsInternal() {
   const valueRedux = useSelector((state: StoreType) => getAllSnackbars(state));
   const dispatch = useDispatch();
@@ -95,6 +97,23 @@ export default function Home() {
         `}
             </Script>
             <main>
+              <InformationBanner
+                dismissible={false}
+                text={
+                  <div className="text-base">
+                    Join the Inferno Incentives program to earn Evmos and Stride
+                    rewards!
+                    <a
+                      href="https://revert.finance/#/incentives/evmos"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2.5 rounded bg-red p-5 py-1.5 font-semibold text-pearl"
+                    >
+                      Check Incentives Now 🚀
+                    </a>
+                  </div>
+                }
+              />
               <Container>
                 <>
                   <SnackbarsInternal />
