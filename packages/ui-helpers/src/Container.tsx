@@ -4,7 +4,7 @@
 export const Container = ({ children }: { children: JSX.Element }) => {
   return (
     <div className="grid min-h-screen min-w-[300px] bg-black">
-      <div className='flex h-full w-full flex-col overflow-auto bg-auto bg-center bg-repeat px-0 font-[GreyCliff]'>
+      <div className="flex h-full w-full flex-col overflow-auto bg-auto bg-center bg-repeat px-0 font-[GreyCliff]">
         {children}
       </div>
     </div>
