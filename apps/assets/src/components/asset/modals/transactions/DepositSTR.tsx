@@ -46,7 +46,7 @@ const DepositSTR = ({
     const temp = new Array<DepositElement>();
     let evmos: TableDataElement;
     data.table.map((item) => {
-      if (item.chainIdentifier === "Evmos") {
+      if (item.name === "EVMOS") {
         evmos = item;
         return;
       }
